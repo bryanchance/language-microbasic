@@ -1,11 +1,8 @@
-comment: "Originally converted from the textmate ASP.VB.Net bundle. Adjusted to support VBA"
+comment: "Built of of VBA language fork. Adjusted to support Microbasic"
 fileTypes: [
-  "vba",
-  "vb",
-  "VB.NET",
-  "vbscript"
+  "mbs"
 ]
-name: "VBA"
+name: "Mircobasic"
 patterns: [
   {
     match: "\\n"
@@ -81,7 +78,7 @@ patterns: [
     name: "comment.line.apostrophe.asp"
   }
   {
-    match: "(?i:\\b(If|Then|Else|ElseIf|Else If|End If|While|Wend|For|To|Each|In|Case|Select|End Select|Return|Continue|Do|Until|Loop|Next|With|End With|Exit Do|Exit For|Exit Function|Exit Property|Exit Sub|IIf|Catch|Finally|GoSub|GoTo|Step|Stop|Try|SyncLock|End SyncLock|Using|End Using)\\b)"
+    match: "(?i:\\b(If|Then|Else|ElseIf|Else If|End If|While|For|In|Return|Continue|Do|Until|Loop|Next|Exit Do|Exit For|Exit Sub|IIf|Catch|Finally|GoSub|GoTo|Step)\\b)"
     name: "keyword.control.asp"
   }
   {
@@ -101,11 +98,11 @@ patterns: [
     name: "variable.other.dim.asp"
   }
   {
-    match: "(?i:\\s*\\b(Call|Class|End Class|Const|Dim|Redim|Function|Sub|Private Sub|Public Sub|End sub|End Function|Set|End Set|Let|Get|End Get|Randomize|Option Explicit|On Error Resume Next|On Error GoTo|Operator|End Operator|Enum|End Enum|Event|Delegate|Interface|End Interface|Declare|Lib|Module|End Module|Namespace|End Namespace|On|Property|End Property|Resume|Structure|End Structure)\\b\\s*)"
+    match: "(?i:\\s*\\b(Dim|Option Explicit|)\\b\\s*)"
     name: "storage.type.asp"
   }
   {
-    match: "(?i:\\s*\\b(Boolean|Byte|Char|Date|Decimal|Double|Integer|Long|Object|SByte|Short|Single|String|UInteger|ULong|UShort)\\b\\s*)" # variable types
+    match: "(?i:\\s*\\b(Boolean|Integer)\\b\\s*)" # variable types
     name: "storage.type.asp"
   }
   { # keywords that have the same colour as 'storage types' in visual studio, but are not 'storage types'
@@ -169,7 +166,7 @@ patterns: [
     name: "support.type.vb.asp"
   }
   {
-    match: "(?i:\\b(Array|Add|Asc|Atn|CBool|CByte|CCur|CDate|CDbl|Chr|CInt|CLng|Conversions|Cos|CreateObject|CSng|CStr|Date|DateAdd|DateDiff|DatePart|DateSerial|DateValue|Day|Derived|Math|Escape|Eval|Exists|Exp|Filter|FormatCurrency|FormatDateTime|FormatNumber|FormatPercent|GetLocale|GetObject|GetRef|Hex|Hour|InputBox|InStr|InStrRev|Int|Fix|IsArray|IsDate|IsEmpty|IsNull|IsNumeric|IsObject|Item|Items|Join|Keys|LBound|LCase|Left|Len|LoadPicture|Log|LTrim|RTrim|Trim|Maths|Mid|Minute|Month|MonthName|MsgBox|Now|Oct|Remove|RemoveAll|Replace|RGB|Right|Rnd|Round|ScriptEngine|ScriptEngineBuildVersion|ScriptEngineMajorVersion|ScriptEngineMinorVersion|Second|SetLocale|Sgn|Sin|Space|Split|Sqr|StrComp|String|StrReverse|Tan|Time|Timer|TimeSerial|TimeValue|TypeName|UBound|UCase|Unescape|VarType|Weekday|WeekdayName|Year|CChar|CDec|CSByte|CShort|CType|CUInt|CULng|CUShort|GetType|GetXMLNamespace)\\b)"
+    match: "(?i:\\b(GetValue|SetCommand|GetConfig|SetConfig|SetTimerCount|GetTimerCount|SetTimerState|GetTimer|State|SetCanCommand|SetCANConfig|FetchCANValue|FetchCANConfig|IsCANValueReady|ReadCANConfig|ScanCANValue|IsScannedCANReady|ReadScannedCANValue|IsCANNodeAlive|atan|ABS|Sin|Sqrt)\\b)"
     name: "support.function.vb.asp"
   }
   {
@@ -177,7 +174,7 @@ patterns: [
     name: "constant.numeric.asp"
   }
   {
-    match: "(?i:\\b(vbtrue|vbfalse|vbcr|vbcrlf|vbformfeed|vblf|vbnewline|vbnullchar|vbnullstring|int32|vbtab|vbverticaltab|vbbinarycompare|vbtextcomparevbsunday|vbmonday|vbtuesday|vbwednesday|vbthursday|vbfriday|vbsaturday|vbusesystemdayofweek|vbfirstjan1|vbfirstfourdays|vbfirstfullweek|vbgeneraldate|vblongdate|vbshortdate|vblongtime|vbshorttime|vbobjecterror|vbEmpty|vbNull|vbInteger|vbLong|vbSingle|vbDouble|vbCurrency|vbDate|vbString|vbObject|vbError|vbBoolean|vbVariant|vbDataObject|vbDecimal|vbByte|vbArray)\\b)"
+    match: "(?i:\\b()\\b)"
     name: "support.type.vb.asp"
   }
   {
