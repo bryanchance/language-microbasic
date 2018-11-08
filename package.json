@@ -1,29 +1,28 @@
 {
-  "name": "language-vba",
-  "main": "./lib/language-vba",
-  "version": "0.2.5",
-  "description": "Syntax highlighting for VBA",
+  "name": "language-mbs",
+  "main": "./lib/language-mbs",
+  "version": "0.1",
+  "description": "Syntax highlighting for Microbasic",
   "keywords": [
     "language",
-    "visual basic",
-    "vb",
-    "visualbasic",
-    "vb.net",
-    "vba"
+    "Microbasic",
+    "mbs",
+    "RoboteQ",
+    "Roborun+"
   ],
   "author": {
-    "name": "Jonnokc"
+    "name": "gsisko"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/Jonnokc/language-vba"
   },
-  "homepage": "https://github.com/Jonnokc/language-vba",
+  "homepage": "https://github.com/gsisko/language-microbasic/",
   "license": "GNU GPL v3",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "readme": "Visual Basic Applications highlighting for Atom",
+  "readme": "MicroBasic Highlighting for Atom",
   "readmeFilename": "README.md",
   "dependencies": {}
 }
